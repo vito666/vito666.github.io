@@ -435,4 +435,16 @@ ul#nav li a:hover {
     text-align: center;
 }
 
+/*Footer*/
+#footer h2,
+#footer span{
+    color: #fff;
+}
+
+#footer #resumeDownload {
+    margin: 100px;
+} 
+
+
+
 
