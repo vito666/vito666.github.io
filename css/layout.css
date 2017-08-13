@@ -388,12 +388,12 @@ ul#nav li a:hover {
 .work {
     margin-bottom: 48px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #E8E8E8;
+    border-bottom: 1px solid #323232;
 }
 
 #resume .info {
     font: 16px/24px 'Playfair Display', serif;
-    color: #6E7881;
+    color: #323232;
     margin-bottom: 18px;
     margin-top: 9px;
 }
