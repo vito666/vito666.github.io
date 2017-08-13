@@ -1,6 +1,6 @@
 $('#progressbar1').LineProgressbar({
     percentage: 70,
-    fillBackgroundColor: '#1abc9c',
+    fillBackgroundColor: '#559700',
     height: '7px',
     radius: '15px'
 });

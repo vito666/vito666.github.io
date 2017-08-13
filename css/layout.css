@@ -29,6 +29,12 @@ serif;
 body {
     background: #0f0f0f;
 }
+hr {
+    background-color:#398eb2;
+    border: none;
+    height: 2px;
+    width: 75%;
+}
 
 
 /* ------------------------------------------------------------------ */
@@ -232,6 +238,7 @@ ul#nav li a:hover {
 }
 
 #about p {
+    font: 18px/1.9em 'Roboto Condensed', sans-serif;
     line-height: 30px;
     color: #fff;
 }
@@ -250,8 +257,12 @@ ul#nav li a:hover {
     transform: rotate(90deg);
 */
 }
+#about #aboutMe {
+    margin-top: 80px;
+    border-left: 4px solid #398eb2;
+}
 
-#about #aboutMe span {
+#about #aboutMe h1 span {
     color: #81c8ee;
 }
 
@@ -262,22 +273,43 @@ ul#nav li a:hover {
 
 #about .main-col h3 {
     font: 25px/1.5em 'Roboto Condensed', sans-serif;
-    color: #ffcc80;
+    color: #3288ca;
     
 }
 
 #about .main-col .bars h3 {
     padding: 15px;
 }
+
+#about #skills span {
+    color: #81c8ee;
+}
 #about #skills h1 {
+    padding: 10px;
+}
+#about #technologies h1 span {
+    color: #81c8ee;
+}
+
+#about #technologies h1 {
     margin-top: 33px;
     margin-bottom: 0;
+}
+
+#about #technologies h3 {
+    font: 25px/1.5em 'Roboto Condensed', sans-serif;
+    color: #3288ca;
+    margin-top: 0;
 }
 
 #about #skills h3 {
     font: 25px/1.5em 'Roboto Condensed', sans-serif;
     color: #fff;
     margin: 0;
+}
+
+#about #progress h1 span {
+    color: #81c8ee;
 }
 
 
@@ -287,8 +319,30 @@ ul#nav li a:hover {
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
+/* -----------------------------------------------
+                        PARALLAX
+------------------- */
+.pimg1{
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* 
+    fixed = parallax
+    scroll = normal
+    */
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url("../img/pexels-photo-295047.png");
+    min-height: 100%;
+}
+/* ------------------------------------------------------------------ */
+
 #resume {
-    background: #fff;
+/*    background: #fff;*/
     padding-top: 90px;
     padding-bottom: 72px;
     overflow: hidden;
@@ -377,3 +431,5 @@ ul#nav li a:hover {
     font: 20px 'Playfair Display', serif;
     text-align: center;
 }
+
+
