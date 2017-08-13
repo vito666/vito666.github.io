@@ -19,11 +19,14 @@
 ================================================== -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="/vito666.github.io/css/jquery.lineProgressbar.css">
+    <link rel="stylesheet" href="owl.carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owl.carousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/media-queries.css">
-    <link rel="stylesheet" href="owl.carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="owl.carousel/owl.theme.default.min.css" />
+
 
 </head>
 
@@ -69,13 +72,19 @@
 ================================================== -->
     <section id="about">
         <div class="row">
-            <div class="col s3">
-                <img class="profile-pic responsive-img " src="img/IMG_3195%202.JPG" alt="" />
+            <div class="col s11 m2 offset-m2  ">
+                <img class="profile-pic responsive-img .hide-on-small-only" src="img/IMG_3195%202.JPG" alt="" />
             </div>
 
-            <div class="col s5 main-col">
 
-                <h1>Skills</h1>
+
+            <div class="col s11 m6 push-m1 main-col ">
+                <h1 id="aboutMe">About<span> Me</span></h1>
+                <p class="">Hi, I'm 21 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro pariatur similique, culpa recusandae cum expedita nemo at debitis tempore fugiat odit fugit aliquid mollitia dicta dolorem praesentium. Blanditiis sit, praesentium.</p>
+            </div>
+
+            <!--
+                <h1 class="center-align">Skills</h1>
                 <br>
 
                 <h3>Languages:</h3>
@@ -88,56 +97,50 @@
 
                 <h3>Platforms:</h3>
                 <p>MacOS(Primary), Windows.</p>
-
-                <h2>Additional Information</h2>
-                <h3>About Me</h3>
-                <p>Hi, I'm 21</p>
-                <h3>English Level:</h3>
-                <p>Fluent</p>
-
-
-                <div class="row">
-
-                    <div>
-                        <h2>Contact Details</h2>
-                        <p class="address">
-                            <span>Artem Konstantinov</span>
-                            <br>
-                            <span>artem.konst6@gmail.com</span>
-                        </p>
-                    </div>
-
-                    <!--
-                    <div class="columns download">
-                        <p>
-                            <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                        </p>
-                    </div>
 -->
-                </div>
-                <!-- end row -->
+
+
+
+        </div>
+
+
+
+        <!-- end .main-col -->
+        <div class="row">
+            <div id="skills" class="col s12">
+                <h1 class="center-align">My<span> Skills</span></h1>
             </div>
-            <!-- end .main-col -->
-            <div class="col s4 main-col bars .hide-on-small-only">
+            <div  class="col s12 m5 offset-m1">
+                <h1 class="center-align">lorem</h1>
+                <br>
+                <h3>Languages:</h3>
+                <p>JavaScript, HTML, CSS, some knowledge Node.js.</p>
+                <h3>Additional Web Tools :</h3>
+                <p>Adobe Photoshop, WordPress, Less, npm, Github.</p>
+
+                <h3>In Progress:</h3>
+                <p>Node.js, React.js.</p>
+
+                <h3>Platforms:</h3>
+                <p>MacOS(Primary), Windows.</p>
+            </div>
+            <div id="progress" class="col s12 m4 l4 main-col bars  ">
                 <h1>Progress Bars</h1>
-                <h3 class="red-text darken-1">JS</h3>
-                <div class="progress">
-                    <div class="determinate" style="width: 50%"></div>
-                </div>
+                <h3>JS</h3>
+                <div id="progressbar1"></div>
 
-                <h3 class="indigo-text">CSS</h3>
-                <div class="progress">
-                    <div class="determinate" style="width: 60%"></div>
-                </div>
-                <h3 class="deep-purple-text">HTML</h3>
-                <div class="progress">
-                    <div class="determinate" style="width: 70%"></div>
-                </div>
-                <h3 class="green-text">Node.js (In Progress)</h3>
+                <h3>CSS</h3>
+                <div id="progressbar2"></div>
+
+                <h3>HTML</h3>
+                <div id="progressbar3"></div>
+
+                <h3>Node.js (In Progress)</h3>
                 <div class="progress">
                     <div class="indeterminate"></div>
                 </div>
-                <h3 class="amber-text text-darken-4">React.js (In Progress)</h3>
+
+                <h3>React.js (In Progress)</h3>
                 <div class="progress">
                     <div class="indeterminate"></div>
                 </div>
@@ -145,6 +148,7 @@
 
 
             </div>
+
         </div>
     </section>
     <!-- About Section End-->
@@ -281,15 +285,34 @@
         <!-- row End -->
     </section>
     <!-- Portfolio Section End-->
+    <section>
+        <div class="row">
+
+            <div>
+                <h2>Contact Details</h2>
+                <a class="waves-effect waves-light btn resume red pulse "><i class="material-icons right">cloud</i>Download Resume</a>
+                <a class="waves-effect waves-light btn email green pulse"><i class="material-icons right">cloud</i>Send Email</a>
+                <p class="address">
+
+                    <span>Artem Konstantinov</span>
+                    <br>
+                    <span>artem.konst6@gmail.com</span>
+                </p>
+            </div>
+            <!-- end row -->
+        </div>
+    </section>
 
     <!-- JavaScript
 ================================================== -->
 
-    <script src="/vito666.github.io/jquery-3.2.1.min.js"></script>
+    <script src="/vito666.github.io/JS/jquery-3.2.1.min.js"></script>
+    <script src="/vito666.github.io/JS/jquery.lineProgressbar.js"></script>
+    <script src="JS/main.js"></script>
     <script>
         $(document).ready(function() {
-            
-            $('.smoothscroll').on('click', function (e) {
+
+            $('.smoothscroll').on('click', function(e) {
                 e.preventDefault();
 
                 var target = this.hash,
@@ -297,11 +320,11 @@
 
                 $('html, body').stop().animate({
                     'scrollTop': $target.offset().top
-                }, 800, 'swing', function () {
+                }, 800, 'swing', function() {
                     window.location.hash = target;
                 });
             });
-            
+
             $('.owl-carousel').owlCarousel({
                 loop: true,
                 margin: 10,
