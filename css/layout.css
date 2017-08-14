@@ -7,6 +7,7 @@ b. Header Styles
 c. About Section
 d. Resume Section
 e. Portfolio Section
+f. Footer Section
 
  */
 
@@ -41,6 +42,25 @@ hr {
 
 
 /* ------------------------------------------------------------------ */
+
+/*PRELOADER*/
+#hellopreloader>p {
+    display: none;
+}
+
+#hellopreloader_preload {
+    display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    background: #4183D7 url(http://hello-site.ru//main/images/preloads/spinning-circles.svg) center center no-repeat;
+    background-size: 41px;
+}
+/*PRELOADER*/
 
 
 /* b. Header Styles
@@ -435,7 +455,10 @@ ul#nav li a:hover {
     text-align: center;
 }
 
-/*Footer*/
+/* f. Footer Section
+/* ------------------------------------------------------------------ */
+
+
 #footer h2,
 #footer span{
     color: #fff;
@@ -444,7 +467,3 @@ ul#nav li a:hover {
 #footer #resumeDownload {
     margin: 100px;
 } 
-
-
-
-

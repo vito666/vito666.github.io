@@ -81,8 +81,7 @@
 
             <div id="aboutMe" class="col s12 m6 push-m1 main-col animated zoomInRight">
                 <h1>About<span> Me</span></h1>
-                <p>Hi, my name Artem. I just ended Main Academy, IT School. Before Main Academy I lived in USA, FL for two years.Worked there as system administrator in furniture store. Sys Admin wasn't my only job, also worked as translator and I spoke a lot with customers. <br>
-                After that i had a part time job to develop online store. Theme was Jewelry. Web site on (WordPress) Woocomerce.</p>
+                <p>Hi, my name Artem. I just ended Main Academy, IT School. Before Main Academy I lived in USA, FL for two years.Worked there as system administrator in furniture store. Sys Admin wasn't my only job, also worked as translator and I spoke a lot with customers. <br> After that i had a part time job to develop online store. Theme was Jewelry. Web site on (WordPress) Woocomerce.</p>
             </div>
         </div>
         <hr>
@@ -154,6 +153,21 @@
 
                     <div class="col s12">
 
+                        <h3>ONAFT</h3>
+                        <p class="info">Faculty of Information Technologies and Cyber security <span>&bull;</span> <em class="date">September 2014 | Odessa, Ukraine</em></p>
+
+                    </div>
+
+                </div>
+                <!-- item end -->
+            </div>
+
+            <div class="col s9 main-col">
+
+                <div class="row item">
+
+                    <div class="col s12 offset-s5">
+
                         <h3>Main Academy</h3>
                         <p class="info">Front-end <span>&bull;</span> <em class="date">November 2016 - June 2017 | Odessa, Ukraine</em></p>
 
@@ -186,7 +200,7 @@
                         <p class="info">System Administrator<span>&bull;</span> <em class="date">March 2016 - September 2016 | Florida,USA</em></p>
 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ut sapiente quod ratione alias consequuntur quibusdam error, ullam omnis, magnam dicta dolorum perferendis necessitatibus, reiciendis veniam aspernatur itaque ipsa? Explicabo?
+                            Responsobilities: Filling the site with content, new products.
                         </p>
 
                     </div>
@@ -202,7 +216,7 @@
                         <p class="info">Wordpress Woocommerce<span>&bull;</span> <em class="date">February 2017 | Odessa, Ukraine</em></p>
 
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nulla iure laboriosam assumenda ipsum ea eius consectetur, deserunt, debitis soluta molestias voluptatum cumque id rem asperiores amet, at. Eius, tempore!
+                            Online-shop,added woocomerce plugin,database(SQL),PHP Admin,
                         </p>
 
                     </div>
@@ -265,7 +279,7 @@
             <div class="col s12 center-align">
                 <h2>Contact Details</h2>
                 <a id="resumeDonwload" class="btn resume red pulse" href="img/Resume.pdf" download><i class="material-icons right">cloud</i>Download Resume</a>
-                
+
                 <a id="email" class=" btn email green pulse" href="mailto:artem.konst6@gmail.com"><i class="material-icons right">cloud</i>Send Email</a>
                 <p class="address">
 
@@ -278,12 +292,39 @@
         </div>
     </section>
 
+    <!-- HelloPreload http://hello-site.ru/preloader/ -->
+    <div id="hellopreloader">
+        <div id="hellopreloader_preload"></div>
+    </div>
+
+
+
     <!-- JavaScript
 ================================================== -->
 
     <script src="/vito666.github.io/JS/jquery-3.2.1.min.js"></script>
     <script src="/vito666.github.io/JS/jquery.lineProgressbar.js"></script>
     <script src="JS/main.js"></script>
+    <script type="text/javascript">
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+
+        function fadeOutnojquery(el) {
+            el.style.opacity = 1;
+            var interhellopreloader = setInterval(function() {
+                el.style.opacity = el.style.opacity - 0.05;
+                if (el.style.opacity <= 0.05) {
+                    clearInterval(interhellopreloader);
+                    hellopreloader.style.display = "none";
+                }
+            }, 16);
+        }
+        window.onload = function() {
+            setTimeout(function() {
+                fadeOutnojquery(hellopreloader);
+            }, 2000);
+        };
+    </script>
+    <!-- HelloPreload http://hello-site.ru/preloader/ -->
     <script>
         $(document).ready(function() {
 
