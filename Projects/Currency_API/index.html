@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+
+
+
+    <div id="num1">
+
+        <select id="options">
+                <option value="EUR" id="">EUR</option>
+            </select>
+        <div id="divCurrency" class="money"></div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function() {
+            $.get("http://api.fixer.io/latest", function(data) {
+                    console.log("1st success")
+                    fillOptions(data.rates);
+                })
+                .done(function() {
+                    console.log("success");
+                })
+                .fail(function() {
+                    console.log("fail");
+                })
+        })
+
+
+
+
+        function fillOptions(r) {
+            for (var key in r) {
+                $("<option value=" + key + " id=''>" + key + "</option>").appendTo("#options");
+            }
+        }
+
+
+        function showRates(r) {
+            for (var key in r) {
+                $("<p>" + key + " | " + r[key] + "</p>").appendTo("#divCurrency");
+            }
+        }
+
+        $(function() {
+            $("#options").change(function() {
+                $("p").remove();
+                $("#divCurrency").show();
+                if ((this).value) {
+                    $.get("http://api.fixer.io/latest?base=" + (this).value, function(data) {
+                            console.log("1st success")
+                            showRates(data.rates);
+                        })
+                        .done(function() {
+                            console.log("success");
+                        })
+                        .fail(function() {
+                            console.log("fail");
+                        })
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
